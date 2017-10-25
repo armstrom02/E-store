@@ -1,0 +1,42 @@
+<body>
+
+	<div class="container">
+		<div class="card">
+			<div class="container-fliud">
+				<div class="wrapper row">
+					<div class="preview col-md-6">
+						
+						<div class="preview-pic tab-content">
+						  <div class="tab-pane active" id="pic-1"><img src="{{imageurl}}" /></div>
+						 
+						</div>
+					
+						
+					</div>
+					<div class="details col-md-6">
+						<h3 class="product-title">{{name}}</h3>
+						<div class="rating">
+							<div class="stars">
+								<span class="fa fa-star checked"></span>
+								<span class="fa fa-star checked"></span>
+								<span class="fa fa-star checked"></span>
+								<span class="fa fa-star"></span>
+								<span class="fa fa-star"></span>
+							</div>
+							<span class="review-no">41 reviews</span>
+						</div>
+						<p class="product-description">The legendary Bullet 350 need no introduction. Now with an all new Unit Construction Engine. This classic machine has kept pace with advances in engineering and ergonomics without diluting its impeccable pedigree.</p>
+						<h4 class="price">current price: <span>1.13 lakh</span></h4>
+						<p class="vote"><strong>91%</strong> of buyers enjoyed this product! <strong>(87 votes)</strong></p>
+						
+						<div class="action">
+							<form><input id="qty" type="number" min="1" value="1" placeholder="Qty"></form>
+							<button class="add-to-cart btn btn-default" (click)="addcart()" type="button">add to cart</button>
+							
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+  </body>

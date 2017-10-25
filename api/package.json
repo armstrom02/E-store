@@ -1,0 +1,28 @@
+{
+  "name": "bridge",
+  "version": "1.0.0",
+  "description": "My API",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"API Working\"",
+    "start": "nodemon bridge.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/armstrom02/assignment_angular.git"
+  },
+  "author": "Vivek Singh",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/armstrom02/assignment_angular/issues"
+  },
+  "homepage": "https://github.com/armstrom02/assignment_angular#readme",
+  "devDependencies": {
+    "nodemon": "^1.12.1"
+  },
+  "dependencies": {
+    "cors": "^2.8.4",
+    "express": "^4.16.2",
+    "mongoose": "^4.12.4"
+  }
+}

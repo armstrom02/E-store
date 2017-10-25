@@ -1,0 +1,47 @@
+
+  <nav class="navbar navbar-default" id="cont">
+    <div class="container-fluid">
+    
+      <ul class="nav navbar-nav">
+        <li><a [routerLink]="['Home']">Home</a></li>
+       <li><a [routerLink]="['productlist']">Product List</a></li>
+      </ul>
+
+      
+     <ng-template [ngIf]="logout.onCheck()">
+     
+        <ul class="nav navbar-nav navbar-right">
+        <li><a [routerLink]="['login']"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+        <li><a [routerLink]="['signup']"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+        </ul>
+      </ng-template>
+
+      <ng-template [ngIf]="!logout.onCheck()">
+          
+          
+        <ul class="nav navbar-nav navbar-right">  
+            <li><a [routerLink]="['profile']"><span class="glyphicon glyphicon-user" ></span>  Welcome {{logout.checkuser()}}</a></li>      
+            <li><a [routerLink]="['productcart']"><span class="glyphicon glyphicon-shopping-cart" ></span> My Cart()</a></li>
+          <div class="dropdown">
+          <button id="btn" class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Settings
+          <span class="caret"></span></button>
+          <ul class="dropdown-menu">
+           
+            <li><a href="#"><span class="	glyphicon glyphicon-pencil" ></span> Edit Profile</a></li>
+            <li><a [routerLink]="['Home']" (click)="doThis()"><span class="glyphicon glyphicon-user" ></span> Logout</a></li>
+          </ul>
+        </div>
+      
+      </ul> 
+          
+
+
+      </ng-template>
+
+
+
+
+  
+    </div>
+  </nav>
+  
